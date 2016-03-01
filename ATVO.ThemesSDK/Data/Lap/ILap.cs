@@ -2,7 +2,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 
-namespace ATVO.ThemesSDK.Data.Laps
+namespace ATVO.ThemesSDK.Data.Lap
 {
     public interface ILap : INotifyPropertyChanged, IComparable<ILap>, IEquatable<ILap>, IFormattable
     {
