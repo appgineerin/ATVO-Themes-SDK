@@ -41,18 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\CameraSwitchCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Data\Camera\ICameraGroup.cs" />
     <Compile Include="Data\Entity\ICar.cs" />
     <Compile Include="Data\Entity\IClass.cs" />
     <Compile Include="Data\Entity\IClub.cs" />
     <Compile Include="Data\Entity\IDriver.cs" />
     <Compile Include="Data\Entity\IEntity.cs" />
     <Compile Include="Data\Entity\ILicense.cs" />
+    <Compile Include="Data\Entity\ITeam.cs" />
     <Compile Include="Data\Enums\BroadcastMessageType.cs" />
     <Compile Include="Data\Enums\CameraState.cs" />
     <Compile Include="Data\Enums\BitfieldExtension.cs" />
-    <Compile Include="Data\Laps\ILap.cs" />
-    <Compile Include="Data\Laps\ISector.cs" />
+    <Compile Include="Data\Lap\ILap.cs" />
+    <Compile Include="Data\Lap\ISector.cs" />
+    <Compile Include="Data\Location\ISector.cs" />
+    <Compile Include="Data\Location\ITrack.cs" />
+    <Compile Include="Data\Location\IWeather.cs" />
+    <Compile Include="Data\Session\ISession.cs" />
     <Compile Include="ISimulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themes\ITheme.cs" />
