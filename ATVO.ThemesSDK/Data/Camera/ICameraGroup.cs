@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATVO.ThemesSDK.Data.Entity;
+using System;
 using System.ComponentModel;
 
 namespace ATVO.ThemesSDK.Data.Camera
@@ -7,5 +8,9 @@ namespace ATVO.ThemesSDK.Data.Camera
     {
         byte Id { get; }
         string Name { get; }
+
+        void Show();
+        void Show(int numberPadded);
+        void Show(IEntity entity);
     }
 }

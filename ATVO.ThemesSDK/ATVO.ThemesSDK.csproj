@@ -44,7 +44,9 @@
     <Compile Include="Command\CameraSwitchCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
     <Compile Include="Data\Camera\ICameraGroup.cs" />
+    <Compile Include="Data\Camera\ICameraManager.cs" />
     <Compile Include="Data\Entity\ICar.cs" />
+    <Compile Include="Data\Entity\ICarMovement.cs" />
     <Compile Include="Data\Entity\IClass.cs" />
     <Compile Include="Data\Entity\IClub.cs" />
     <Compile Include="Data\Entity\IDriver.cs" />
