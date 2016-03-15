@@ -58,6 +58,11 @@
     <Compile Include="Data\Enums\BroadcastMessageType.cs" />
     <Compile Include="Data\Enums\CameraState.cs" />
     <Compile Include="Data\Enums\BitfieldExtension.cs" />
+    <Compile Include="Data\Enums\EngineWarnings.cs" />
+    <Compile Include="Data\Enums\SessionFlags.cs" />
+    <Compile Include="Data\Enums\SessionState.cs" />
+    <Compile Include="Data\Enums\TrackLocation.cs" />
+    <Compile Include="Data\ITelemetry.cs" />
     <Compile Include="Data\Lap\ILap.cs" />
     <Compile Include="Data\Lap\ISector.cs" />
     <Compile Include="Data\Location\ISector.cs" />
