@@ -43,6 +43,8 @@
   <ItemGroup>
     <Compile Include="Command\CameraSwitchCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Data\Camera\CameraChangedEventArgs.cs" />
+    <Compile Include="Data\Camera\FollowerChangedEventArgs.cs" />
     <Compile Include="Data\Camera\ICameraGroup.cs" />
     <Compile Include="Data\Camera\ICameraManager.cs" />
     <Compile Include="Data\Entity\ICar.cs" />
