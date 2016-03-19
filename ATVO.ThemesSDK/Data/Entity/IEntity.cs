@@ -7,7 +7,7 @@ using System.Windows.Media.Imaging;
 
 namespace ATVO.ThemesSDK.Data.Entity
 {
-    public interface IEntity : INotifyPropertyChanged, INotifyCollectionChanged, IReadOnlyCollection<IDriver>, IEquatable<IEntity>, IComparable<IEntity>, IFormattable
+    public interface IEntity : INotifyPropertyChanged, INotifyCollectionChanged, IReadOnlyCollection<IDriver>, IEquatable<IEntity>, IComparable<IEntity>
     {
         string Name { get; }
         int Id { get; }

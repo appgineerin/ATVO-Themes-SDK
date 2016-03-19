@@ -1,4 +1,6 @@
-﻿using ATVO.ThemesSDK.Data.Location;
+﻿using ATVO.ThemesSDK.Data.Entity;
+using ATVO.ThemesSDK.Data.Location;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 
 namespace ATVO.ThemesSDK.Data.Session
@@ -9,5 +11,8 @@ namespace ATVO.ThemesSDK.Data.Session
         ISessionOptions Options { get; }
         ITrack Track { get; }
         IWeather Weather { get; }
+        IClassManager ClassManager { get; }
+        ReadOnlyObservableCollection<IEntity> Entities { get; }
+        int StrengthOfField { get; }
     }
 }

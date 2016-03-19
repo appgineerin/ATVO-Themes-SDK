@@ -3,7 +3,7 @@ using System.Windows.Media.Imaging;
 
 namespace ATVO.ThemesSDK.Data.Entity
 {
-    public interface IDriver : IEntity, IEquatable<IDriver>, IFormattable
+    public interface IDriver : IEntity, IEquatable<IDriver>
     {
         string Initials { get; }
         string ShortName { get; }

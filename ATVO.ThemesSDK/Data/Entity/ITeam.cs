@@ -2,7 +2,7 @@
 
 namespace ATVO.ThemesSDK.Data.Entity
 {
-    public interface ITeam : IEntity, IEquatable<ITeam>, IFormattable
+    public interface ITeam : IEntity, IEquatable<ITeam>
     {
     }
 }

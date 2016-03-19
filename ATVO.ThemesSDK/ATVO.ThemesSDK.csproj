@@ -50,6 +50,7 @@
     <Compile Include="Data\Entity\ICar.cs" />
     <Compile Include="Data\Entity\ICarMovement.cs" />
     <Compile Include="Data\Entity\IClass.cs" />
+    <Compile Include="Data\Entity\IClassManager.cs" />
     <Compile Include="Data\Entity\IClub.cs" />
     <Compile Include="Data\Entity\IDriver.cs" />
     <Compile Include="Data\Entity\IEntity.cs" />
