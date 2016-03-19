@@ -70,6 +70,7 @@
     <Compile Include="Data\Location\ITrack.cs" />
     <Compile Include="Data\Location\IWeather.cs" />
     <Compile Include="Data\Session\ISession.cs" />
+    <Compile Include="Data\Session\ISessionInfo.cs" />
     <Compile Include="Data\Session\ISessionOptions.cs" />
     <Compile Include="ISimulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

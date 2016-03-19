@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ATVO.ThemesSDK.Data.Location;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ATVO.ThemesSDK.Data.Session
 {
     public interface ISession : INotifyPropertyChanged
     {
-        ISessionOptions SessionOptions { get; }
+        ISessionInfo Info { get; }
+        ISessionOptions Options { get; }
+        ITrack Track { get; }
+        IWeather Weather { get; }
     }
 }

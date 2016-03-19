@@ -1,4 +1,5 @@
 ﻿using ATVO.ThemesSDK.Data.Camera;
+using ATVO.ThemesSDK.Data.Session;
 using System.ComponentModel;
 using System.Threading;
 
@@ -13,6 +14,8 @@ namespace ATVO.ThemesSDK
         bool IsConnected { get; }
 
         ICameraManager CameraManager { get; }
+        ISession Session { get; }
+        string TelemetryDiskFile { get; }
 
         void Start();
         void Stop();
