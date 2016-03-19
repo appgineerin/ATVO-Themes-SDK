@@ -12,6 +12,7 @@ namespace ATVO.ThemesSDK.Data.Entity
         bool IsDriving { get; }
         IClub Club { get; }
         ILicense License { get; }
+        int Division { get; }
         BitmapSource Helmet { get; }
     }
 }

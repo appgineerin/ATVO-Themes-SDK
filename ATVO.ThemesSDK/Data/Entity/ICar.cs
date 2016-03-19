@@ -4,9 +4,10 @@ using System.Windows.Media.Imaging;
 
 namespace ATVO.ThemesSDK.Data.Entity
 {
-    public interface ICar : INotifyPropertyChanged, IEquatable<ICar>, IFormattable
+    public interface ICar : INotifyPropertyChanged, IEquatable<ICar>
     {
         string Number { get; }
+        string Path { get; }
         string Name { get; }
         int NumberPadded { get; }
         int Id { get; }
