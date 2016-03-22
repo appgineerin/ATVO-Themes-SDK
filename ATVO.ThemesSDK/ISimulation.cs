@@ -17,7 +17,6 @@ namespace ATVO.ThemesSDK
         ITelemetry Telemetry { get; }
         ICameraManager CameraManager { get; }
         ISession Session { get; }
-        string TelemetryDiskFile { get; }
 
         void Start();
         void Stop();

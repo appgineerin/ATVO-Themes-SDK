@@ -61,8 +61,10 @@
     <Compile Include="Data\Enums\BitfieldExtension.cs" />
     <Compile Include="Data\Enums\EngineWarnings.cs" />
     <Compile Include="Data\Enums\RaceStartingType.cs" />
+    <Compile Include="Data\Enums\SessionEventType.cs" />
     <Compile Include="Data\Enums\SessionFlags.cs" />
     <Compile Include="Data\Enums\SessionState.cs" />
+    <Compile Include="Data\Enums\SessionType.cs" />
     <Compile Include="Data\Enums\TrackLocation.cs" />
     <Compile Include="Data\ITelemetry.cs" />
     <Compile Include="Data\Lap\ILap.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Data\Location\ITrack.cs" />
     <Compile Include="Data\Location\IWeather.cs" />
     <Compile Include="Data\Session\ISession.cs" />
+    <Compile Include="Data\Session\ISessionEvent.cs" />
     <Compile Include="Data\Session\ISessionInfo.cs" />
     <Compile Include="Data\Session\ISessionOptions.cs" />
     <Compile Include="ISimulation.cs" />

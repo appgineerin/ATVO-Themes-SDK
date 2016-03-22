@@ -13,6 +13,7 @@ namespace ATVO.ThemesSDK.Data.Session
         IWeather Weather { get; }
         IClassManager ClassManager { get; }
         ReadOnlyObservableCollection<IEntity> Entities { get; }
+        ReadOnlyObservableCollection<ISessionEvent> SessionEvents { get; }
         int StrengthOfField { get; }
     }
 }
