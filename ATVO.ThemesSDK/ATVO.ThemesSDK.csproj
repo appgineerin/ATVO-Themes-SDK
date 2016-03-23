@@ -55,6 +55,7 @@
     <Compile Include="Data\Entity\IDriver.cs" />
     <Compile Include="Data\Entity\IEntity.cs" />
     <Compile Include="Data\Entity\ILicense.cs" />
+    <Compile Include="Data\Entity\IPitStop.cs" />
     <Compile Include="Data\Entity\ITeam.cs" />
     <Compile Include="Data\Enums\BroadcastMessageType.cs" />
     <Compile Include="Data\Enums\CameraState.cs" />
@@ -72,11 +73,16 @@
     <Compile Include="Data\Location\ISector.cs" />
     <Compile Include="Data\Location\ITrack.cs" />
     <Compile Include="Data\Location\IWeather.cs" />
+    <Compile Include="Data\Results\IEntityResults.cs" />
+    <Compile Include="Data\Results\IEntitySessionResult.cs" />
+    <Compile Include="Data\Results\ISessionResult.cs" />
     <Compile Include="Data\Session\ISession.cs" />
     <Compile Include="Data\Session\ISessionEvent.cs" />
     <Compile Include="Data\Session\ISessionInfo.cs" />
     <Compile Include="Data\Session\ISessionOptions.cs" />
     <Compile Include="ISimulation.cs" />
+    <Compile Include="Ordering\DataOrders.cs" />
+    <Compile Include="Ordering\IDataOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themes\ITheme.cs" />
   </ItemGroup>
