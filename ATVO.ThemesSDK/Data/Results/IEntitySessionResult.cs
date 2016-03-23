@@ -49,7 +49,7 @@ namespace ATVO.ThemesSDK.Data.Results
         bool Out { get; }
         bool DidNotStart { get; }
         int Incidents { get; }
-        TimeSpan AirTime { get; }
+        TimeSpan AirTime { get; set; }
         double InvisibleSince { get; }
     }
 }
