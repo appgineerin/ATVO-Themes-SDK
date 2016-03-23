@@ -81,8 +81,19 @@
     <Compile Include="Data\Session\ISessionInfo.cs" />
     <Compile Include="Data\Session\ISessionOptions.cs" />
     <Compile Include="ISimulation.cs" />
+    <Compile Include="Ordering\AbstractDataOrder.cs" />
+    <Compile Include="Ordering\ClassLivePositionDataOrder.cs" />
+    <Compile Include="Ordering\ClassPositionDataOrder.cs" />
     <Compile Include="Ordering\DataOrders.cs" />
+    <Compile Include="Ordering\FastestLapDataOrder.cs" />
+    <Compile Include="Ordering\FastestPitLaneTimeDataOrder.cs" />
+    <Compile Include="Ordering\FastestPitStopTimeDataOrder.cs" />
     <Compile Include="Ordering\IDataOrder.cs" />
+    <Compile Include="Ordering\LeadLapsDataOrder.cs" />
+    <Compile Include="Ordering\LivePositionDataOrder.cs" />
+    <Compile Include="Ordering\PitStopCountDataOrder.cs" />
+    <Compile Include="Ordering\PositionDataOrder.cs" />
+    <Compile Include="Ordering\StartPositionDataOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themes\ITheme.cs" />
   </ItemGroup>
