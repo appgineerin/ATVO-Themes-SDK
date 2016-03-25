@@ -50,6 +50,7 @@ namespace ATVO.ThemesSDK.Data.Results
         bool DidNotStart { get; }
         int Incidents { get; }
         TimeSpan AirTime { get; set; }
+        string ReasonOutString { get; }
         double InvisibleSince { get; }
     }
 }

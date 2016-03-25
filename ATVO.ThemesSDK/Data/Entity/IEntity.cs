@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ATVO.ThemesSDK.Data.Results;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
@@ -15,6 +16,7 @@ namespace ATVO.ThemesSDK.Data.Entity
         ICar Car { get; }
         ReadOnlyObservableCollection<IDriver> Drivers { get; }
         IDriver CurrentDriver { get; }
+        IEntityResults Results { get; }
         BitmapSource Suit { get; }
     }
 }

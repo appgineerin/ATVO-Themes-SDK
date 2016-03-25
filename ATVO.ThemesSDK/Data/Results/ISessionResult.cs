@@ -27,6 +27,7 @@ namespace ATVO.ThemesSDK.Data.Results
         double SessionStartTime { get; }
         int LapsTotal { get; }
         int LapsCompleted { get; }
+        int LapsRemaining { get; }
         int FinishLine { get; }
         int CurrentReplayPosition { get; }
         bool PitOccupied { get; }

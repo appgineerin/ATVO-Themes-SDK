@@ -1,15 +1,16 @@
-﻿using System;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 
 namespace ATVO.ThemesSDK.Data.Lap
 {
-    public interface ILap : INotifyPropertyChanged, IComparable<ILap>, IEquatable<ILap>, IFormattable
+    public interface ILap : INotifyPropertyChanged
     {
-        uint Number { get; }
-        byte Position { get; }
-        byte ClassPosition { get; }
-        TimeSpan Time { get; }
+        int Number { get; }
+        int Position { get; }
+        int ClassPosition { get; }
+        float Time { get; }
+        float Gap { get; }
+        int GapLaps { get; }
         ReadOnlyObservableCollection<ISector> Sectors { get; }
     }
 }
