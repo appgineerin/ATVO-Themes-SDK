@@ -13,6 +13,7 @@ namespace ATVO.ThemesSDK.Data.Entity
         string Name { get; }
         int Id { get; }
         byte CarIdx { get; }
+        bool IsFollowedEntity { get; }
         ICar Car { get; }
         ReadOnlyObservableCollection<IDriver> Drivers { get; }
         IDriver CurrentDriver { get; }

@@ -6,7 +6,7 @@ namespace ATVO.ThemesSDK.Data.Camera
 {
     public interface ICameraGroup : INotifyPropertyChanged, IEquatable<ICameraGroup>, IComparable<ICameraGroup>
     {
-        byte Id { get; }
+        int Id { get; }
         string Name { get; }
 
         void Show();
