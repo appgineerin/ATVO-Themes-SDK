@@ -31,12 +31,12 @@ namespace ATVO.ThemesSDK.Data.Enums
             return false;
         }
 
-        private static Tuple<int, int> getValues<T>(T bitfield, T bit) where T : struct, IConvertible
+        private static Tuple<long, long> getValues<T>(T bitfield, T bit) where T : struct, IConvertible
         {
             if (!typeof(T).IsEnum)
                 throw new ArgumentException(string.Format("The type of T has to be an enumerated type, but it was {0}.", typeof(T).Name));
 
-            return new Tuple<int, int>((int)(object)bitfield, (int)(object)bit);
+            return new Tuple<long, long>((long)(object)bitfield, (long)(object)bit);
         }
     }
 }
