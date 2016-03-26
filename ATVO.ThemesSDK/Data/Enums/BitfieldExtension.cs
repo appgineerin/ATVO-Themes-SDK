@@ -22,6 +22,15 @@ namespace ATVO.ThemesSDK.Data.Enums
             return (values.Item1 & values.Item2) == values.Item2;
         }
 
+        public static bool CheckBits<T>(this T bitfield, params T[] bits) where T : struct, IConvertible
+        {
+            foreach (var bit in bits)
+                if (bitfield.CheckBit(bit))
+                    return true;
+
+            return false;
+        }
+
         private static Tuple<int, int> getValues<T>(T bitfield, T bit) where T : struct, IConvertible
         {
             if (!typeof(T).IsEnum)

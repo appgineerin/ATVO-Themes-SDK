@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculators\ITimeDelta.cs" />
     <Compile Include="Command\CameraSwitchCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
     <Compile Include="Data\Camera\CameraChangedEventArgs.cs" />
@@ -61,6 +62,7 @@
     <Compile Include="Data\Enums\CameraState.cs" />
     <Compile Include="Data\Enums\BitfieldExtension.cs" />
     <Compile Include="Data\Enums\EngineWarnings.cs" />
+    <Compile Include="Data\Enums\EventType.cs" />
     <Compile Include="Data\Enums\RaceStartingType.cs" />
     <Compile Include="Data\Enums\SessionEventType.cs" />
     <Compile Include="Data\Enums\SessionFlags.cs" />
@@ -80,6 +82,7 @@
     <Compile Include="Data\Session\ISessionEvent.cs" />
     <Compile Include="Data\Session\ISessionInfo.cs" />
     <Compile Include="Data\Session\ISessionOptions.cs" />
+    <Compile Include="Event\ISimEventManager.cs" />
     <Compile Include="ISimulation.cs" />
     <Compile Include="Ordering\AbstractDataOrder.cs" />
     <Compile Include="Ordering\ClassLivePositionDataOrder.cs" />
