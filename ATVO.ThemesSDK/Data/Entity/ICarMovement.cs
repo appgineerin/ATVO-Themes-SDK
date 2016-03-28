@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
 namespace ATVO.ThemesSDK.Data.Entity
 {
     public interface ICarMovement : INotifyPropertyChanged
     {
         float Speed { get; }
+        bool IsAccelerating { get; }
+        bool IsBraking { get; }
+        double TrackPct { get; }
+        int Gear { get; }
     }
 }

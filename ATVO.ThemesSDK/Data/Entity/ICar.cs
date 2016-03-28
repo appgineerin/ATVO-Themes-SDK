@@ -12,6 +12,7 @@ namespace ATVO.ThemesSDK.Data.Entity
         int NumberPadded { get; }
         int Id { get; }
         IClass Class { get; }
+        ICarMovement Movement { get; }
         BitmapSource Image { get; }
     }
 }
