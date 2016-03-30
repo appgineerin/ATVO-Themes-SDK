@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using ATVO.ThemesSDK.Data.Enums;
+using System.ComponentModel;
 
 namespace ATVO.ThemesSDK.Data.Entity
 {
@@ -9,5 +10,7 @@ namespace ATVO.ThemesSDK.Data.Entity
         bool IsBraking { get; }
         double TrackPct { get; }
         int Gear { get; }
+        TrackLocation TrackLocation { get; }
+        bool IsInPits { get; }
     }
 }

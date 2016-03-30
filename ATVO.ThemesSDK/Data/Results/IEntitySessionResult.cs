@@ -42,6 +42,7 @@ namespace ATVO.ThemesSDK.Data.Results
         ILap FastestLap { get; }
         ReadOnlyObservableCollection<ILap> Laps { get; }
         double CurrentTrackPct { get; }
+        int Stint { get; }
         int PitStopCount { get; }
         IPitStop CurrentPitStop { get; }
         ReadOnlyObservableCollection<IPitStop> PitStops { get; }

@@ -11,6 +11,7 @@ namespace ATVO.ThemesSDK.Data.Lap
         float Time { get; }
         float Gap { get; }
         int GapLaps { get; }
+        int ReplayPosition { get; }
         ReadOnlyObservableCollection<ISector> Sectors { get; }
     }
 }

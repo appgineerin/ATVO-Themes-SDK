@@ -7,7 +7,7 @@ namespace ATVO.ThemesSDK.Data.Entity
     public interface IClass : INotifyPropertyChanged, IEquatable<IClass>, IComparable<IClass>
     {
         byte Id { get; }
-        byte Order { get; }
+        int Order { get; }
         int RelativeSpeed { get; }
         string Name { get; }
         Color Color { get; }
