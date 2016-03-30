@@ -1,6 +1,7 @@
 ﻿using ATVO.ThemesSDK.Calculators;
 using ATVO.ThemesSDK.Data;
 using ATVO.ThemesSDK.Data.Camera;
+using ATVO.ThemesSDK.Data.Enums;
 using ATVO.ThemesSDK.Data.Session;
 using ATVO.ThemesSDK.Event;
 using System.ComponentModel;
@@ -28,5 +29,8 @@ namespace ATVO.ThemesSDK
         void Stop();
         object GetData(string key);
         T GetData<T>(string key, T def = default(T));
+        void BroadcastMessage(BroadcastMessageType type, int var1, int var2);
+        void BroadcastMessage(BroadcastMessageType type, int var1, int var2, int var3);
+        void AddEvent(EventType type);
     }
 }
