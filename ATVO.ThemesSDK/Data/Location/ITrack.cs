@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 
 namespace ATVO.ThemesSDK.Data.Location
@@ -23,7 +23,7 @@ namespace ATVO.ThemesSDK.Data.Location
         bool HasTrackCleanup { get; }
         bool IsDynamicTrack { get; }
 
-        IEnumerable<ISector> Sectors { get; }
-        IList<ISector> SelectedSectors { get; }
+        ReadOnlyObservableCollection<ISector> Sectors { get; }
+        ObservableCollection<ISector> SelectedSectors { get; }
     }
 }
