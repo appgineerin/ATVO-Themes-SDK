@@ -1,8 +1,9 @@
-﻿using System.Windows;
+﻿using System;
+using System.Windows;
 
 namespace ATVO.ThemesSDK.Themes
 {
-    public interface ITheme
+    public interface ITheme : IDisposable
     {
         UIElement Overlay { get; }
         UIElement Controls { get; }
