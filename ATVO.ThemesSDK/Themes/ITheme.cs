@@ -9,6 +9,6 @@ namespace ATVO.ThemesSDK.Themes
         UIElement Controls { get; }
         UIElement Settings { get; }
 
-        void Load(ISimulation sim);
+        void Load();
     }
 }
