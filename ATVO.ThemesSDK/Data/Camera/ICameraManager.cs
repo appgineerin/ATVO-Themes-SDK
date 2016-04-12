@@ -9,6 +9,7 @@ namespace ATVO.ThemesSDK.Data.Camera
     {
         ReadOnlyObservableCollection<ICameraGroup> CameraGroups { get; }
         int CurrentGroupId { get; }
+        ICameraGroup CurrentGroup { get; }
         IEntity FollowedEntity { get; }
         bool IsInReplay { get; }
 
