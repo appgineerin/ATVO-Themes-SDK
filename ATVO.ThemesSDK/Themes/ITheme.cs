@@ -6,8 +6,10 @@ namespace ATVO.ThemesSDK.Themes
 {
     public interface ITheme : IModule, IDisposable
     {
-        UIElement Overlay { get; }
-        UIElement Controls { get; }
-        UIElement Settings { get; }
+        FrameworkElement Overlay { get; }
+        FrameworkElement Controls { get; }
+        FrameworkElement Settings { get; }
+
+        void SaveSettings();
     }
 }
