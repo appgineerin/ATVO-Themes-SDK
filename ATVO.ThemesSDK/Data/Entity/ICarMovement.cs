@@ -10,6 +10,7 @@ namespace ATVO.ThemesSDK.Data.Entity
         bool IsBraking { get; }
         double TrackPct { get; }
         int Gear { get; }
+        int Rpm { get; }
         TrackLocation TrackLocation { get; }
         bool IsInPits { get; }
     }
