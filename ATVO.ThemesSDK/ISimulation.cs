@@ -18,6 +18,9 @@ namespace ATVO.ThemesSDK
         bool HideSimUI { get; set; }
         bool IsConnected { get; }
 
+        bool UseMetricUnits { get; set; }
+        bool UseLiveData { get; set; }
+
         ITelemetry Telemetry { get; }
         ICameraManager CameraManager { get; }
         ITimeDelta TimeDelta { get; }
