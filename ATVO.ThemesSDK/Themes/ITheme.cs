@@ -11,5 +11,6 @@ namespace ATVO.ThemesSDK.Themes
         FrameworkElement Settings { get; }
 
         void SaveSettings();
+        void HandleRemoteEvent(string name, params string[] args);
     }
 }

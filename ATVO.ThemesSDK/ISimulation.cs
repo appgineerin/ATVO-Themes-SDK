@@ -35,5 +35,6 @@ namespace ATVO.ThemesSDK
         void BroadcastMessage(BroadcastMessageType type, int var1, int var2);
         void BroadcastMessage(BroadcastMessageType type, int var1, int var2, int var3);
         void AddEvent(EventType type);
+        void SendRemoteEvent(string name, params string[] args);
     }
 }
