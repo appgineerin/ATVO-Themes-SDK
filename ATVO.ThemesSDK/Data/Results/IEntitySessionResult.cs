@@ -34,6 +34,10 @@ namespace ATVO.ThemesSDK.Data.Results
         float LiveInterval { get; }
         int IntervalLaps { get; }
         int LiveIntervalLaps { get; }
+        IEntitySessionResult Ahead { get; }
+        IEntitySessionResult LiveAhead { get; }
+        IEntitySessionResult Behind { get; }
+        IEntitySessionResult LiveBehind { get; }
         float FastestLapTime { get; }
         float LastLapTime { get; }
         double CurrentLapTime { get; }
