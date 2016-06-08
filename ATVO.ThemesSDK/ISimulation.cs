@@ -1,4 +1,5 @@
-﻿using ATVO.ThemesSDK.Calculators;
+﻿using System;
+using ATVO.ThemesSDK.Calculators;
 using ATVO.ThemesSDK.Data;
 using ATVO.ThemesSDK.Data.Camera;
 using ATVO.ThemesSDK.Data.Enums;
@@ -6,6 +7,7 @@ using ATVO.ThemesSDK.Data.Session;
 using ATVO.ThemesSDK.Event;
 using System.ComponentModel;
 using System.Threading;
+using ATVO.ThemesSDK.Data.Results;
 
 namespace ATVO.ThemesSDK
 {
@@ -27,6 +29,8 @@ namespace ATVO.ThemesSDK
         ISession Session { get; }
         ISimEventManager EventManager { get; }
         int CurrentRadioCarIdx { get; }
+
+        event EventHandler<ISessionResult> CurrentSessionChangedEvent; 
 
         void Start();
         void Stop();
