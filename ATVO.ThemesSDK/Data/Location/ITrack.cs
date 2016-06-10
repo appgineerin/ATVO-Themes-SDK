@@ -6,7 +6,7 @@ namespace ATVO.ThemesSDK.Data.Location
     public interface ITrack : INotifyPropertyChanged
     {
         string Name { get; }
-        byte Id { get; }
+        int Id { get; }
         float Length { get; }
         string DisplayName { get; }
         string DisplayShortName { get; }
