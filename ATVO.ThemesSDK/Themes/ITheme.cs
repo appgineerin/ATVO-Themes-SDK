@@ -9,7 +9,9 @@ namespace ATVO.ThemesSDK.Themes
         FrameworkElement Overlay { get; }
         FrameworkElement Controls { get; }
         FrameworkElement Settings { get; }
+
         Version Version { get; }
+        Version SdkVersion { get; }
 
         void SaveSettings();
         void HandleRemoteEvent(string name, params string[] args);
