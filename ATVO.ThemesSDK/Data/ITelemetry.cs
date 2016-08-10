@@ -1,19 +1,26 @@
 ﻿using ATVO.ThemesSDK.Data.Enums;
 using System.ComponentModel;
+// ReSharper disable InconsistentNaming
 
 namespace ATVO.ThemesSDK.Data
 {
     public interface ITelemetry : INotifyPropertyChanged
     {
         double SessionTime { get; }
+        long SessionTick { get; }
         int SessionNum { get; }
         SessionState SessionState { get; }
         int SessionUniqueID { get; }
         SessionFlags SessionFlags { get; }
         double SessionTimeRemain { get; }
         int SessionLapsRemain { get; }
+        int SessionLapsRemainEx { get; }
         int RadioTransmitCarIdx { get; }
+        int RadioTransmitRadioIdx { get; }
+        int RadioTransmitFrequencyIdx { get; }
+        int DisplayUnits { get; }
         bool DriverMarker { get; }
+        bool IsOnTrack { get; }
         bool IsReplayPlaying { get; }
         int ReplayFrameNum { get; }
         int ReplayFrameNumEnd { get; }
@@ -21,10 +28,22 @@ namespace ATVO.ThemesSDK.Data
         bool IsDiskLoggingActive { get; }
         float FrameRate { get; }
         float CpuUsageBG { get; }
+        int PlayerCarPosition { get; }
+        int PlayerCarClassPosition { get; }
+        TrackLocation PlayerTrackSurface { get; }
+        int PlayerCarIdx { get; }
+        int PlayerCarTeamIncidentCount { get; }
+        int PlayerCarMyIncidentCount { get; }
+        int PlayerCarDriverIncidentCount { get; }
         int[] CarIdxLap { get; }
+        int[] CarIdxLapCompleted { get; }
         float[] CarIdxLapDistPct { get; }
         TrackLocation[] CarIdxTrackSurface { get; }
         bool[] CarIdxOnPitRoad { get; }
+        int[] CarIdxPosition { get; }
+        int[] CarIdxClassPosition { get; }
+        float[] CarIdxF2Time { get; }
+        float[] CarIdxEstTime { get; }
         bool OnPitRoad { get; }
         float[] CarIdxSteer { get; }
         float[] CarIdxRPM { get; }
@@ -36,6 +55,7 @@ namespace ATVO.ThemesSDK.Data
         int Gear { get; }
         float RPM { get; }
         int Lap { get; }
+        int LapCompleted { get; }
         float LapDist { get; }
         float LapDistPct { get; }
         int RaceLaps { get; }
@@ -43,6 +63,10 @@ namespace ATVO.ThemesSDK.Data
         float LapBestLapTime { get; }
         float LapLastLapTime { get; }
         float LapCurrentLapTime { get; }
+        int LapLasNLapSeq { get; }
+        float LapLastNLapTime { get; }
+        int LapBestBLapLap { get; }
+        float LapBestNLapTime { get; }
         float LapDeltaToBestLap { get; }
         float LapDeltaToBestLap_DD { get; }
         bool LapDeltaToBestLap_OK { get; }
@@ -69,15 +93,31 @@ namespace ATVO.ThemesSDK.Data
         float VelocityY { get; }
         float VelocityZ { get; }
         float Yaw { get; }
+        float YawNorth { get; }
         float Pitch { get; }
         float Roll { get; }
+        int EnterExitReset { get; }
+        float TrackTemp { get; }
+        float TrackTempCrew { get; }
+        float AirTemp { get; }
+        int WeatherType { get; }
+        int Skies { get; }
+        float AirDensity { get; }
+        float AirPressure { get; }
+        float WindVel { get; }
+        float WindDir { get; }
+        float RelativeHumidity { get; }
+        float FogLevel { get; }
+        int DCLapStatus { get; }
+        int DCDriversSoFar { get; }
+        bool OkToReloadTextures { get; }
         float PitRepairLeft { get; }
         float PitOptRepairLeft { get; }
         int CamCarIdx { get; }
         int CamCameraNumber { get; }
         int CamGroupNumber { get; }
         CameraState CamCameraState { get; }
-        bool IsOnTrack { get; }
+        bool IsOnTrackCar { get; }
         bool IsInGarage { get; }
         float SteeringWheelTorque { get; }
         float SteeringWheelPctTorque { get; }
@@ -89,14 +129,21 @@ namespace ATVO.ThemesSDK.Data
         float ShiftPowerPct { get; }
         float ShiftGrindRPM { get; }
         float ThrottleRaw { get; }
+        float BrakeRaw { get; }
+        float SteeringWheelPeakForceNm { get; }
         EngineWarnings EngineWarnings { get; }
         float FuelLevel { get; }
         float FuelLevelPct { get; }
+        long PitSvFlags { get; }
+        float PitSvLFP { get; }
+        float PitSvRFP { get; }
+        float PitSvLRP { get; }
+        float PitSvRRP { get; }
+        float PitSvFuel { get; }
         float ReplayPlaySpeed { get; }
         bool ReplayPlaySlowMotion { get; }
         double ReplaySessionTime { get; }
         int ReplaySessionNum { get; }
-        bool dcTractionControlToggle { get; }
         float dcBrakeBias { get; }
         float dcTractionControl { get; }
         float dcABS { get; }
@@ -105,6 +152,7 @@ namespace ATVO.ThemesSDK.Data
         float WaterTemp { get; }
         float WaterLevel { get; }
         float FuelPress { get; }
+        float FuelUsePerHour { get; }
         float OilTemp { get; }
         float OilPress { get; }
         float OilLevel { get; }
@@ -126,6 +174,8 @@ namespace ATVO.ThemesSDK.Data
         float LRwearL { get; }
         float LRwearM { get; }
         float LRwearR { get; }
+        float RFbrakeLinePressure { get; }
+        float RFcoldPressure { get; }
         float RFtempCL { get; }
         float RFtempCM { get; }
         float RFtempCR { get; }
@@ -141,8 +191,12 @@ namespace ATVO.ThemesSDK.Data
         float LFwearM { get; }
         float LFwearR { get; }
         float RRshockDefl { get; }
+        float RRshockVel { get; }
         float LRshockDefl { get; }
+        float LRshockVel { get; }
         float RFshockDefl { get; }
+        float RFshockVel { get; }
         float LFshockDefl { get; }
+        float LFshockVel { get; }
     }
 }
