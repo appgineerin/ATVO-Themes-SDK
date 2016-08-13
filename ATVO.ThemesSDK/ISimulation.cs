@@ -30,7 +30,8 @@ namespace ATVO.ThemesSDK
         ISimEventManager EventManager { get; }
         int CurrentRadioCarIdx { get; }
 
-        event EventHandler<ISessionResult> CurrentSessionChangedEvent; 
+        event EventHandler<ISessionResult> CurrentSessionChangedEvent;
+        event EventHandler<ISimulation> DataUpdatedEvent;
 
         void Start();
         void Stop();
