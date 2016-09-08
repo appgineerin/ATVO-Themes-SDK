@@ -13,8 +13,6 @@ namespace ATVO.ThemesSDK.Themes
         Version Version { get; }
         Version SdkVersion { get; }
 
-        bool IsLicensedTheme { get; }
-
         void SaveSettings();
         void HandleRemoteEvent(string name, params string[] args);
     }
