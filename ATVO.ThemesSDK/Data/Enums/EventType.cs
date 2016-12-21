@@ -24,6 +24,8 @@
         Init,
         Caution,
         DriverSwap,
-        NewEntities
+        NewEntities,
+        Connected,
+        ThemeLoaded
     }
 }
